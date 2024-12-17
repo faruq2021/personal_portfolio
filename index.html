@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faruq Dauda - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #0078d7;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        header, footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            background-color: #333;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0078d7;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1100px;
+            padding: 2em 0;
+        }
+        section {
+            margin-bottom: 3em;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5em 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Skills and Projects */
+        .skills ul, .projects ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .skills li, .projects li {
+            flex: 1 1 calc(33.333% - 1em);
+            background: #f4f4f9;
+            padding: 1em;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        /* Contact Section */
+        #contact a {
+            color: #0078d7;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .skills li, .projects li {
+                flex: 1 1 calc(50% - 1em);
+            }
+            nav {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .skills li, .projects li {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faruq Dauda</h1>
+        <p>Blockchain Developer | Backend Developer | AI Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a versatile Blockchain Developer with a strong foundation in backend development and machine learning. 
+                With over three years of experience, I have successfully built secure, scalable, and innovative solutions for various industries. 
+                Passionate about leveraging emerging technologies to solve real-world challenges.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Blockchain Development (Ethereum, Solidity, Smart Contracts)</li>
+                <li>Backend Development (.NET, C#, GoLang, RESTful APIs)</li>
+                <li>Machine Learning and AI (TensorFlow, Keras, Scikit-learn)</li>
+                <li>Cloud Platforms (AWS, IBM Cloud)</li>
+                <li>Frontend Development (HTML, CSS, JavaScript)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Highlighted Projects</h2>
+            <ul>
+                <li><strong>PayBlock:</strong> A Web3-based salary management system using Ethereum smart contracts for automatic salary disbursements.</li>
+                <li><strong>DigiAsset:</strong> A decentralized app for financial asset declaration and auditing, leveraging blockchain technology.</li>
+                <li><strong>Breast Cancer Classification Model:</strong> A machine learning model with over 90% accuracy for classifying breast cancer results.</li>
+                <li><strong>Satellite Imagery Detection:</strong> AI-powered system for object and weather detection in satellite images.</li>
+                <li><strong>Ticket Booking App:</strong> A console application developed in GoLang for event ticket reservations.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:faruqdauda9@gmail.com">faruqdauda9@gmail.com</a></p>
+            <p>Phone: 08134140023</p>
+            <p>GitHub: <a href="https://github.com/faruq2021" target="_blank">github.com/faruq2021</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Faruq Dauda. All rights reserved.</p>
+    </footer>
+</body>
+</html>
